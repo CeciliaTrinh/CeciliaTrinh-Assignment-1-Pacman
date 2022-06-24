@@ -1,0 +1,589 @@
+/************************************************** HTML Document ********************************************************/
+
+@font-face {
+    font-family: Press-Start-K ;
+    src: url(fonts/prstartk.ttf) format(tiff);
+    font-style: normal;
+    font-weight: normal;
+}
+
+html{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+/************************************************** HTML Document ********************************************************/
+
+/************************************************** Nav Bar ********************************************************/
+
+nav{
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 15px;
+    font-family: Press Start K;
+    font-size: 12pt;
+    font-weight: normal;
+
+}
+
+nav a:hover{
+    color: #f9ed3f;
+    transition: ease-in-out, 0.5s;
+}
+
+/************************************************** Nav Bar ********************************************************/
+
+/************************************************** Logo Image ********************************************************/
+
+#home img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/************************************************** Logo Image ********************************************************/
+
+/************************************************** Header Animation ********************************************************/
+
+.pacman{
+    animation-name: pacman-move;
+    animation-timing-function: ease-in-out;
+    transform: rotateX(90deg);
+    animation-duration: 20s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+}
+
+.ghost-1{
+    animation-name: ghost-move-1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+}
+
+.ghost-2{
+    animation-name: ghost-move-2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+}
+
+.ghost-3{
+    animation-name: ghost-move-3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+}
+
+.ghost-4{
+    animation-name: ghost-move-3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+}
+
+.animation img{
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes pacman-move{
+   
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+
+@keyframes ghost-move-1{
+    from{
+        transform: translateX(-1080px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+@keyframes ghost-move-2{
+    from{
+        transform: translateX(-1080px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+@keyframes ghost-move-3{
+    from{
+        transform: translateX(-1080px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+    
+}
+
+
+@keyframes ghost-move-4{
+    from{
+        transform: translateX(-1080px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+/************************************************** Header Animation ********************************************************/
+
+/************************************************* Blinking Animation Text ***************************************************/
+
+.blinking-amimation p{
+    animation: blink 2s infinite alternate;
+    text-align: center;
+    font-family: Press Start K;
+    font-size: 16pt;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/************************************************* Blinking Animation Text ***************************************************/
+
+/************************************************** Blinking Animation ********************************************************/
+
+@keyframes blink {
+    from{opacity: 0; color: white;}
+    to{opacity: 1; color: #f9ed3f;}
+}
+
+/************************************************** Blinking Animation ********************************************************/
+
+/************************************************* Section Divider ***************************************************/
+
+section::after{
+    content: '';
+    display: block;
+   background-color: #f9ed3f;
+   height: 2px;
+   width: 2000px;
+}
+
+/************************************************* Section Divider ***************************************************/
+
+/************************************************** Ready Subheading ********************************************************/
+
+.ready-subheading{
+    font-family: Press Start K;
+    font-size: 20pt;
+    font-weight: normal;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #f9ed3f;
+}
+
+/************************************************** Ready Subheading ********************************************************/
+
+
+/************************************************** Players Heading ********************************************************/
+
+.players-heading{
+    text-align: center;
+    color: white;
+   
+    font-family: Press Start K;
+    font-size: 16pt;
+    font-weight: normal;
+
+}
+
+/************************************************** Players Heading ********************************************************/
+
+
+/************************************************** Players Scoreborad ********************************************************/
+
+#high-scores{
+    color: white;
+    font-family: Press Start K;
+    font-size: 15pt;
+    font-weight: normal;
+    text-align: center;
+}
+
+#high-scores td{
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+#high-scores th{
+    font-size: 16pt;
+    padding-bottom: 30px;
+}
+
+
+tr:nth-child(2){
+    color: #ffa002;
+}
+
+tr:nth-child(3){
+    color: #ff0401;
+}
+
+tr:nth-child(4){
+    color: #01f8f8;
+}
+
+tr:nth-child(5){
+    color: #ff60b0;
+}
+
+tr:nth-child(6){
+    color: #ffa002;
+}
+
+tr:nth-child(7){
+    color: #ff0401;
+}
+
+tr:nth-child(8){
+    color: #01f8f8;
+}
+
+tr:nth-child(9){
+    color: #ff60b0;
+}
+
+tr:nth-child(10){
+    color: #ffa002;
+}
+
+tr:nth-child(11){
+    color: #ff0401;
+}
+
+
+/************************************************** Players Scoreborad ********************************************************/
+
+
+/************************************************** Section Divider************************************************************/
+
+br::after{
+    content: '';
+    display: inline-block;
+   background-color: #f9ed3f;
+   height: 5px;
+   max-width: max-content;
+
+}
+
+br::before{
+    content: '';
+    display: inline-block;
+   background-color: #f9ed3f;
+   height: 5px;
+   max-width: max-content;
+
+}
+
+/************************************************** Section Divider************************************************************/
+
+
+/************************************************** Second Animation ********************************************************/
+
+.animation-2 img{
+    height: 100px;
+    width: 100px;
+}
+
+.pacman-2{
+    animation-name: pacman-move-2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.eaten-1{
+    animation-name: eaten-move-1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.eaten-2{
+    animation-name: eaten-move-2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.eaten-3{
+    animation-name: eaten-move-3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; 
+}
+
+.eaten-4{
+    animation-name: eaten-move-3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pacman-move-2{
+    from{
+        transform: translateX(-1350px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+
+@keyframes eaten-move-1{
+    from{
+        transform: translateX(-1100px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+
+@keyframes eaten-move-2{
+    from{
+        transform: translateX(-1100px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+@keyframes eaten-move-3{
+    from{
+        transform: translateX(-1100px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+
+@keyframes eaten-move-4{
+    from{
+        transform: translateX(-1100px);
+    }
+    to{
+        transform: translateX(1550px);
+    }
+}
+
+/************************************************** Second Animation ********************************************************/
+
+/************************************************** How to Play Section ********************************************************/
+
+#how-to-play h6{
+    color: white;
+    text-align: center;
+    font-family: Press Start K;
+    font-size: 20pt;
+    font-weight: normal;
+
+}
+
+#how-to-play p{
+    color: white;
+    text-align: center;
+    font-family: Press Start K;
+    font-size: 16pt;
+    font-weight: normal;
+
+}
+
+.how-to-play-highlight{
+    color: #f9ed3f;
+}
+
+/************************************************** How to Play Section ********************************************************/
+
+/************************************************** Players and Points Section ********************************************************/
+
+
+
+#players h6{
+    color: white;
+    text-align: center;
+    font-family: Press Start K;
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+#players img{
+    height: 100px;
+    width: 100px;
+    margin-left: 500px;
+    transform: rotateY(180deg);
+}
+
+.players-description-1:nth-of-type(1){
+    color: #ff0401;
+}
+
+.players-description-2:nth-of-type(2){
+    color: #ff60b0;
+}
+
+.players-description-3:nth-of-type(3){
+    color: #01f8f8;
+}
+
+.players-description-4:nth-of-type(4){
+    color: #ffa002;
+}
+
+.players-description-1{
+    text-align: center;
+    font-family: Press Start K;
+    font-size: 12pt;
+    font-weight: normal;
+    float: right;
+    margin-right: 600px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.players-description-2{
+    text-align: center;
+    font-family: Press Start K;
+    font-size: 12pt;
+    font-weight: normal;
+    margin-right: 600px;
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.players-description-3{
+
+    text-align: center;
+    font-family: Press Start K;
+    font-size: 12pt;
+    font-weight: normal;
+    float: right;
+    margin-right: 600px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.players-description-4{
+    text-align: center;
+    font-family: Press Start K;
+    font-size: 12pt;
+    font-weight: normal;
+    float: right;
+    margin-right: 600px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.eaten-points-value{
+    font-family: Press Start K;
+    font-size: 10pt;
+    font-weight: normal;
+    color: white;
+    display: inline-block;
+    margin-left: 550px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.eaten-points img{
+    height: 55px;
+    width: 55px;
+    padding-left: 10px;
+}
+
+.fifthy-points-box{
+    height: 10px;
+    width: 25px;
+    background-color: #f9ed3f;
+    display: inline-block;
+    margin-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.fifthy-points-value{
+    font-family: Press Start K;
+    font-size: 10pt;
+    font-weight: normal;
+    color: white;
+    display: inline-block;
+    margin-left: 550px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.ten-points-box{
+    height: 3.5px;
+    width: 15px;
+    background-color: #f9ed3f;
+    display: inline-block;
+    margin-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.ten-points-value{
+    font-family: Press Start K;
+    font-size: 10pt;
+    font-weight: normal;
+    color: white;
+    display: inline-block;
+    margin-left: 550px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/************************************************** Players and Points Section ********************************************************/
+
+/************************************************** Footer and Legal Disclaimer ********************************************************/
+
+.disclaimer-text{
+    text-align: center;
+    font-family: Press Start K;
+    font-size: 6pt;
+    font-weight: normal;
+    color: white;
+}
+
+/************************************************** Footer and Legal Disclaimer ********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
